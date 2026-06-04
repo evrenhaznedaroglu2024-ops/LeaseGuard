@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LeaseGuard AI Terms of Use — Apple App Store compliant End User License Agreement." />
+  <title>Terms of Use – LeaseGuard AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brand-blue: #4F7FFF; --brand-purple: #9B59F5;
+      --dark: #0A0B0F; --dark-card: #13151C;
+      --dark-border: rgba(255,255,255,0.08);
+      --text-primary: #F0F2FF; --text-secondary: #8A93B4;
+      --gradient-brand: linear-gradient(135deg, #4F7FFF 0%, #9B59F5 100%);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, sans-serif; background: var(--dark); color: var(--text-primary); line-height: 1.7; }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5%; height: 64px;
+      background: rgba(10,11,15,0.92); backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--dark-border);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; font-size: 1.1rem; font-weight: 700; color: var(--text-primary); text-decoration: none; }
+    .nav-logo-icon { width: 32px; height: 32px; border-radius: 8px; background: var(--gradient-brand); display: flex; align-items: center; justify-content: center; font-size: 16px; }
+    .nav-back { color: var(--text-secondary); text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: color 0.2s; }
+    .nav-back:hover { color: var(--text-primary); }
+    .page-hero {
+      padding: 60px 5% 40px; text-align: center;
+      background: linear-gradient(135deg, rgba(155,89,245,0.06) 0%, rgba(79,127,255,0.06) 100%);
+      border-bottom: 1px solid var(--dark-border);
+    }
+    .page-badge {
+      display: inline-block; background: rgba(155,89,245,0.1); border: 1px solid rgba(155,89,245,0.2);
+      color: var(--brand-purple); font-size: 0.78rem; font-weight: 600;
+      padding: 5px 14px; border-radius: 50px; margin-bottom: 16px;
+      text-transform: uppercase; letter-spacing: 1px;
+    }
+    .page-hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; margin-bottom: 12px; }
+    .page-hero p { color: var(--text-secondary); font-size: 0.95rem; }
+    .content-wrap { max-width: 820px; margin: 0 auto; padding: 60px 5% 80px; }
+    .toc { background: var(--dark-card); border: 1px solid var(--dark-border); border-radius: 16px; padding: 24px 28px; margin-bottom: 48px; }
+    .toc h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 14px; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px; }
+    .toc ol { padding-left: 20px; }
+    .toc li { margin-bottom: 8px; }
+    .toc a { color: var(--brand-purple); text-decoration: none; font-size: 0.9rem; transition: opacity 0.2s; }
+    .toc a:hover { opacity: 0.8; }
+    .terms-section { margin-bottom: 48px; }
+    .terms-section h2 {
+      font-size: 1.25rem; font-weight: 700;
+      padding-bottom: 12px; margin-bottom: 20px;
+      border-bottom: 1px solid var(--dark-border);
+      display: flex; align-items: center; gap: 10px;
+    }
+    .terms-section h2 .num {
+      width: 30px; height: 30px; border-radius: 8px;
+      background: linear-gradient(135deg, #9B59F5, #4F7FFF);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.8rem; font-weight: 700; flex-shrink: 0;
+    }
+    .terms-section p { color: var(--text-secondary); margin-bottom: 16px; font-size: 0.95rem; }
+    .terms-section ul, .terms-section ol { color: var(--text-secondary); padding-left: 22px; margin-bottom: 16px; font-size: 0.95rem; }
+    .terms-section li { margin-bottom: 8px; line-height: 1.7; }
+    .terms-section h3 { font-size: 1rem; font-weight: 600; margin: 24px 0 12px; color: var(--text-primary); }
+    .info-box { background: rgba(79,127,255,0.08); border: 1px solid rgba(79,127,255,0.2); border-radius: 12px; padding: 18px 20px; margin-bottom: 20px; font-size: 0.9rem; color: var(--text-secondary); }
+    .info-box strong { color: var(--brand-blue); }
+    .warning-box { background: rgba(255,59,48,0.08); border: 1px solid rgba(255,59,48,0.25); border-radius: 12px; padding: 18px 20px; margin-bottom: 20px; font-size: 0.9rem; color: var(--text-secondary); }
+    .warning-box strong { color: #FF3B30; }
+    .highlight-box { background: rgba(155,89,245,0.08); border: 1px solid rgba(155,89,245,0.2); border-radius: 12px; padding: 18px 20px; margin-bottom: 20px; font-size: 0.9rem; color: var(--text-secondary); }
+    .highlight-box strong { color: var(--brand-purple); }
+    .contact-card { background: var(--dark-card); border: 1px solid var(--dark-border); border-radius: 16px; padding: 28px; display: flex; align-items: flex-start; gap: 16px; }
+    .contact-icon { font-size: 2rem; }
+    .contact-title { font-weight: 700; margin-bottom: 8px; }
+    .contact-detail { color: var(--text-secondary); font-size: 0.9rem; }
+    .contact-detail a { color: var(--brand-blue); text-decoration: none; }
+    footer { border-top: 1px solid var(--dark-border); padding: 32px 5%; text-align: center; }
+    .footer-links { display: flex; justify-content: center; gap: 24px; margin-bottom: 16px; flex-wrap: wrap; }
+    .footer-links a { color: var(--text-secondary); text-decoration: none; font-size: 0.88rem; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--text-primary); }
+    footer p { color: var(--text-secondary); font-size: 0.82rem; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><div class="nav-logo-icon">🛡️</div>LeaseGuard AI</a>
+  <a href="index.html" class="nav-back">← Back to Home</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-badge">Legal Document</div>
+  <h1>Terms of Use</h1>
+  <p>Last updated: June 4, 2025 &nbsp;|&nbsp; Apple EULA Compliant</p>
+</div>
+
+<div class="content-wrap">
+
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <ol>
+      <li><a href="#t1">Acceptance & Applicability</a></li>
+      <li><a href="#t2">Scope & Limitations of Service</a></li>
+      <li><a href="#t3">License & Intellectual Property</a></li>
+      <li><a href="#t4">User Account & Security</a></li>
+      <li><a href="#t5">Subscription & Payment Terms</a></li>
+      <li><a href="#t6">Artificial Intelligence Disclaimer</a></li>
+      <li><a href="#t7">Prohibited Uses</a></li>
+      <li><a href="#t8">Content Responsibility</a></li>
+      <li><a href="#t9">Disclaimer of Warranties</a></li>
+      <li><a href="#t10">Limitation of Liability</a></li>
+      <li><a href="#t11">Service Modification & Termination</a></li>
+      <li><a href="#t12">Apple App Store Specific Terms</a></li>
+      <li><a href="#t13">Governing Law & Jurisdiction</a></li>
+      <li><a href="#t14">Contact</a></li>
+    </ol>
+  </div>
+
+  <div class="terms-section" id="t1">
+    <h2><span class="num">1</span> Acceptance & Applicability</h2>
+    <p>These Terms of Use ("Terms", "Agreement") constitute a legally binding contract between individuals who download, install, or use the LeaseGuard AI mobile application ("App") and the application developer ("Developer", "Company").</p>
+    <p>By downloading or continuing to use the App, you agree to these Terms and our <a href="privacy-policy.html" style="color:var(--brand-blue)">Privacy Policy</a>. If you do not agree to these Terms, please do not use the App.</p>
+    <div class="info-box">
+      <strong>ℹ️ Age Requirement:</strong> You must be at least 13 years old to use the App. Parental consent is required for users aged 13–17.
+    </div>
+  </div>
+
+  <div class="terms-section" id="t2">
+    <h2><span class="num">2</span> Scope & Limitations of Service</h2>
+    <div class="warning-box">
+      <strong>⚠️ Critical Notice — Not Legal Advice:</strong> LeaseGuard AI does not provide legal counsel or advisory services. All analyses, risk scores, explanations, and suggestions produced by the App are for informational purposes only. No output may be interpreted as legal advice, attorney services, or an official legal opinion.
+    </div>
+    <p>LeaseGuard AI provides the following services:</p>
+    <ul>
+      <li>Lease agreement text analysis and risk assessment</li>
+      <li>Interpretation of lease clauses within a legal framework</li>
+      <li>Damage inspection photography and reporting</li>
+      <li>Informational chat about tenant rights</li>
+      <li>General information on various national legal systems</li>
+    </ul>
+    <p>The App does <strong>not</strong> provide:</p>
+    <ul>
+      <li>Individual legal counsel or attorney representation</li>
+      <li>Preparation of official documents for court proceedings</li>
+      <li>Legal representation or case management</li>
+      <li>Guarantees of specific legal outcomes</li>
+    </ul>
+  </div>
+
+  <div class="terms-section" id="t3">
+    <h2><span class="num">3</span> License & Intellectual Property</h2>
+    <h3>3.1 License Granted to User</h3>
+    <p>Subject to these Terms, the Developer grants you a limited, non-exclusive, non-transferable, and non-sublicensable license to use the App on Apple devices for personal, non-commercial purposes.</p>
+    <h3>3.2 Restrictions</h3>
+    <p>You may not:</p>
+    <ul>
+      <li>Copy, modify, or create derivative works of the App</li>
+      <li>Reverse engineer, decompile, or disassemble the App</li>
+      <li>Sell, rent, or transfer the App to third parties</li>
+      <li>Use content obtained from the App for commercial purposes</li>
+      <li>Use the Developer's trademark or logo without prior written permission</li>
+    </ul>
+    <h3>3.3 Intellectual Property</h3>
+    <p>All rights, trademarks, designs, source code, and content of the App belong to the Developer. Documents uploaded by the user (lease agreements, photos) remain the property of the user.</p>
+  </div>
+
+  <div class="terms-section" id="t4">
+    <h2><span class="num">4</span> User Account & Security</h2>
+    <p>LeaseGuard AI uses only Apple's "Sign in with Apple" for authentication. You are responsible for:</p>
+    <ul>
+      <li>Notifying us immediately of any unauthorized access to your account</li>
+      <li>The security of your Apple account</li>
+      <li>Not creating accounts on behalf of others</li>
+      <li>Not sharing your account with any other person</li>
+    </ul>
+    <p>The Developer is not liable for damages arising from a breach of account security.</p>
+  </div>
+
+  <div class="terms-section" id="t5">
+    <h2><span class="num">5</span> Subscription & Payment Terms</h2>
+    <h3>5.1 Free Plan</h3>
+    <p>Core features (risk score, clause analysis) are provided free of charge with no payment required.</p>
+    <h3>5.2 Premium Subscription</h3>
+    <p>Premium features (damage reports, AI chat, petition drafting) require a monthly subscription:</p>
+    <ul>
+      <li><strong>Price:</strong> $3.99 / month (prices may vary by country)</li>
+      <li><strong>Payment:</strong> Processed through the Apple App Store; credit/debit card or Apple Pay</li>
+      <li><strong>Renewal:</strong> Subscription renews automatically each month unless cancelled</li>
+      <li><strong>Cancellation:</strong> You may cancel at any time, effective at the end of the current period</li>
+    </ul>
+    <h3>5.3 Cancellation & Refunds</h3>
+    <p>To cancel: <strong>iPhone Settings → Apple ID → Subscriptions → LeaseGuard AI → Cancel Subscription</strong>.</p>
+    <p>Refund requests are subject to Apple's refund policy: <a href="https://support.apple.com/billing" target="_blank" rel="noopener" style="color:var(--brand-blue)">Apple Billing Support</a></p>
+    <div class="highlight-box">
+      <strong>📌 App Store Subscription Disclosure:</strong> Payment will be charged to your Apple ID account at confirmation of purchase. Subscription automatically renews unless cancelled at least 24 hours before the end of the current period. Your account will be charged for renewal within 24 hours prior to the end of the current period.
+    </div>
+    <h3>5.4 Price Changes</h3>
+    <p>Subscription prices may change. Users will be notified at least 30 days in advance of any price change and will have the option to accept or decline the new price.</p>
+  </div>
+
+  <div class="terms-section" id="t6">
+    <h2><span class="num">6</span> Artificial Intelligence Disclaimer</h2>
+    <div class="warning-box">
+      <strong>⚠️ Regarding AI Responses:</strong> The App uses large language model (LLM) technology. AI responses may be inaccurate, incomplete, or out of date. No AI-generated output may be:
+    </div>
+    <ul>
+      <li>Construed as legal advice from an attorney</li>
+      <li>Used as evidence in legal proceedings</li>
+      <li>Relied upon to guarantee specific legal outcomes</li>
+      <li>Assumed to reflect the latest changes in local legislation</li>
+    </ul>
+    <p>The user is responsible for independently verifying the accuracy and currency of AI-generated content. Consulting a licensed attorney is mandatory for important legal decisions.</p>
+  </div>
+
+  <div class="terms-section" id="t7">
+    <h2><span class="num">7</span> Prohibited Uses</h2>
+    <p>You may not use the App for any of the following purposes:</p>
+    <ul>
+      <li>Engaging in or facilitating unlawful activities</li>
+      <li>Submitting another person's personal information without their consent</li>
+      <li>Spreading malware, spam, or harmful content</li>
+      <li>Attacking the App's infrastructure or security</li>
+      <li>Uploading fictitious or forged documents for analysis</li>
+      <li>Performing bulk data scraping or automated access</li>
+      <li>Creating false reports about third parties</li>
+    </ul>
+    <p>Detection of any prohibited use may result in account suspension or permanent termination.</p>
+  </div>
+
+  <div class="terms-section" id="t8">
+    <h2><span class="num">8</span> Content Responsibility</h2>
+    <p>Documents uploaded by the user (lease agreements, photos) belong to and remain the responsibility of the user. The Developer:</p>
+    <ul>
+      <li>Is not responsible for the content of user-uploaded documents</li>
+      <li>Does not review or retain user documents</li>
+      <li>Is not liable for damages resulting from inaccurate or misleading documents</li>
+    </ul>
+  </div>
+
+  <div class="terms-section" id="t9">
+    <h2><span class="num">9</span> Disclaimer of Warranties</h2>
+    <p>The App is provided "AS IS" and "AS AVAILABLE". To the maximum extent permitted by law, the Developer expressly disclaims:</p>
+    <ul>
+      <li>Any warranty that the App will operate uninterrupted or error-free</li>
+      <li>Any warranty regarding the accuracy, completeness, or fitness of AI analyses</li>
+      <li>Any warranty of fitness for a particular purpose</li>
+      <li>Any representation that the App constitutes legal advice</li>
+    </ul>
+  </div>
+
+  <div class="terms-section" id="t10">
+    <h2><span class="num">10</span> Limitation of Liability</h2>
+    <p>To the maximum extent permitted by applicable law, the Developer shall not be liable for damages arising from:</p>
+    <ul>
+      <li>Legal decisions made in reliance on AI analyses</li>
+      <li>Losses resulting from service interruption or technical failure</li>
+      <li>Data loss (we recommend keeping backups on your device)</li>
+      <li>Issues caused by third-party services (Apple, RevenueCat)</li>
+      <li>Damages caused by the user's own negligence</li>
+    </ul>
+    <p>The Developer's total liability shall not exceed the subscription fees paid by the user in the preceding 12 months.</p>
+  </div>
+
+  <div class="terms-section" id="t11">
+    <h2><span class="num">11</span> Service Modification & Termination</h2>
+    <p>The Developer reserves the right to:</p>
+    <ul>
+      <li>Update, modify, or add/remove features at any time</li>
+      <li>Temporarily or permanently suspend all or part of the services</li>
+      <li>Suspend or terminate accounts that violate these Terms</li>
+    </ul>
+    <p>Users will be given reasonable advance notice of significant service changes. If the service is permanently discontinued during a paid period, a pro-rated refund for the remaining period will be issued.</p>
+  </div>
+
+  <div class="terms-section" id="t12">
+    <h2><span class="num">12</span> Apple App Store Specific Terms</h2>
+    <div class="info-box">
+      <strong>ℹ️ Apple EULA:</strong> These Terms apply alongside Apple's Standard End User License Agreement (EULA). In case of conflict, Apple's App Store terms prevail.
+    </div>
+    <p>For this App acquired through the Apple App Store:</p>
+    <ul>
+      <li>Apple is not a party to this agreement; it serves as the distribution channel only</li>
+      <li>Apple assumes no warranty or liability regarding the App or its content</li>
+      <li>All support requests for the App and its services are directed to the Developer, not Apple</li>
+      <li>The App is compatible with Apple hardware and software and has been subject to App Store review guidelines</li>
+      <li>In any intellectual property infringement claim, the responsible party is the Developer, not Apple</li>
+      <li>Apple is a third-party beneficiary of this agreement and has the right to enforce its terms against you</li>
+    </ul>
+    <p>To view Apple's Standard EULA: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener" style="color:var(--brand-blue)">apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
+  </div>
+
+  <div class="terms-section" id="t13">
+    <h2><span class="num">13</span> Governing Law & Jurisdiction</h2>
+    <p>These Terms are governed by the laws of the Republic of Turkey. In the event of a dispute, the parties will first seek an amicable resolution.</p>
+    <p>For disputes that cannot be resolved amicably, the Istanbul (Çağlayan) Courts and Enforcement Offices shall have exclusive jurisdiction.</p>
+    <p>EU consumers retain the right to bring claims before the competent supervisory authority in their country of residence for disputes related to GDPR.</p>
+  </div>
+
+  <div class="terms-section" id="t14">
+    <h2><span class="num">14</span> Contact</h2>
+    <div class="contact-card">
+      <div class="contact-icon">📬</div>
+      <div>
+        <div class="contact-title">Terms of Use Inquiries</div>
+        <div class="contact-detail">
+          <p>Email: <a href="mailto:info@idakim.com">info@idakim.com</a></p>
+          <p style="margin-top:8px;">Please include "Terms of Use — [your topic]" in the subject line. Responses are sent within 30 business days.</p>
+          <p style="margin-top:8px;">Privacy Policy: <a href="privacy-policy.html" style="color:var(--brand-blue)">privacy-policy.html</a> &nbsp;|&nbsp; Support: <a href="support.html" style="color:var(--brand-blue)">support.html</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-use.html">Terms of Use</a>
+    <a href="support.html">Support</a>
+    <a href="mailto:info@idakim.com">info@idakim.com</a>
+  </div>
+  <p>© 2025 LeaseGuard AI — idakim.com · All rights reserved.</p>
+</footer>
+</body>
+</html>
