@@ -94,7 +94,7 @@
 <div class="page-hero">
   <div class="page-badge">Legal Document</div>
   <h1>Privacy Policy</h1>
-  <p>Last updated: June 4, 2025 &nbsp;|&nbsp; Applies to: LeaseGuard AI iOS Application</p>
+  <p>Last updated: June 4, 2026 &nbsp;|&nbsp; Applies to: LeaseGuard AI iOS Application</p>
 </div>
 
 <div class="content-wrap">
@@ -166,7 +166,7 @@
     <ul>
       <li><strong>Apple Inc.:</strong> For Sign in with Apple authentication and App Store subscription management. Apple's Privacy Policy: <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener" style="color:var(--brand-blue)">apple.com/legal/privacy</a></li>
       <li><strong>RevenueCat, Inc.:</strong> For subscription management. Data is processed with an anonymous ID. RevenueCat Privacy Policy: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener" style="color:var(--brand-blue)">revenuecat.com/privacy</a></li>
-      <li><strong>AI Model Provider:</strong> Lease text and chat messages are transmitted over encrypted connections for analysis and are not stored permanently.</li>
+      <li><strong>AI Model Provider:</strong> Lease text and chat messages are transmitted over encrypted connections (TLS 1.3) to a self-hosted Ollama LLM server operated by idakim.com. No third-party AI service (OpenAI, Anthropic, Google, etc.) receives your data. Content is processed in-memory and discarded after the response is returned.</li>
     </ul>
     <p>Your data is never sold, rented, or transferred to third parties for marketing purposes. In the event of a legal obligation or official request, relevant authorities may be informed; you will be notified where permitted by law.</p>
   </div>
@@ -182,8 +182,42 @@
       <li>Account deletion permanently clears all local data</li>
     </ul>
     <div class="info-box">
-      <strong>🔐 Security Breach Notification:</strong> In the event of a data security breach, affected users will be notified within 72 hours.
+      <strong>🔐 Security Breach Notification:</strong> In the event of a data security breach affecting your personal data, affected users will be notified within 72 hours of discovery, in accordance with GDPR Article 33.
     </div>
+
+    <h3 style="margin-top:28px; color:var(--text-primary); font-size:1.05rem; font-weight:700">Retention Periods by Data Category</h3>
+    <table class="data-table" style="margin-top:12px">
+      <thead>
+        <tr><th>Data Type</th><th>Location</th><th>Retention</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Lease text submitted for analysis</td><td>AI server (RAM only)</td><td>Discarded immediately after response</td></tr>
+        <tr><td>Apple User ID</td><td>Device + RevenueCat</td><td>Until account deletion</td></tr>
+        <tr><td>Display name</td><td>Device only</td><td>Until account deletion</td></tr>
+        <tr><td>Damage photos</td><td>Device only (SwiftData)</td><td>Until user deletes them</td></tr>
+        <tr><td>Chat history</td><td>Device only (SwiftData)</td><td>Until user clears history or deletes account</td></tr>
+        <tr><td>Subscription status</td><td>RevenueCat</td><td>Per RevenueCat retention policy</td></tr>
+        <tr><td>AI response moderation reports</td><td>AI server</td><td>90 days, then automatically purged</td></tr>
+        <tr><td>Account deletion records (hashed user ID)</td><td>AI server</td><td>30 days for audit, then purged</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top:28px; color:var(--text-primary); font-size:1.05rem; font-weight:700">Legal Basis for Processing (GDPR Article 6)</h3>
+    <ul>
+      <li><strong>Contract performance (Art. 6(1)(b)):</strong> Processing lease text and chat queries is necessary to deliver the AI analysis service you requested.</li>
+      <li><strong>Consent (Art. 6(1)(a)):</strong> Each lease analysis requires explicit in-app consent via a toggle before submission. You may withdraw consent at any time by ceasing to use the feature.</li>
+      <li><strong>Legitimate interest (Art. 6(1)(f)):</strong> Anonymous error logging and abuse moderation, balanced against your rights and freedoms.</li>
+      <li><strong>Legal obligation (Art. 6(1)(c)):</strong> Where applicable, to comply with tax, accounting, or law enforcement requests.</li>
+    </ul>
+
+    <h3 style="margin-top:28px; color:var(--text-primary); font-size:1.05rem; font-weight:700">Sub-processors</h3>
+    <p>The following sub-processors handle your data on our behalf. We perform due-diligence reviews before engagement and require GDPR-compliant data processing agreements.</p>
+    <ul>
+      <li><strong>Apple Inc.</strong> (USA) — Sign in with Apple, App Store payments</li>
+      <li><strong>RevenueCat, Inc.</strong> (USA) — Subscription state management</li>
+      <li><strong>Cloudflare, Inc.</strong> (USA) — TLS termination and DDoS protection for the AI API endpoint</li>
+      <li><strong>idakim.com self-hosted infrastructure</strong> (operated by the data controller) — Ollama LLM inference and Qdrant vector store. No third-party AI provider receives lease content.</li>
+    </ul>
   </div>
 
   <div class="policy-section" id="s6">
@@ -293,7 +327,7 @@
     <a href="support.html">Support</a>
     <a href="mailto:info@idakim.com">info@idakim.com</a>
   </div>
-  <p>© 2025 LeaseGuard AI — idakim.com · All rights reserved.</p>
+  <p>© 2026 LeaseGuard AI — idakim.com · All rights reserved.</p>
 </footer>
 </body>
 </html>
